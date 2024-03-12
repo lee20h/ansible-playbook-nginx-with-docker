@@ -1,0 +1,10 @@
+- hosts: workers
+  become: yes
+
+  tasks:
+    - name: Ensure nginx is installed
+      apt:
+        name: nginx
+        state: present
+    - name: run nginx server
+      command: service nginx start
