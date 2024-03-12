@@ -43,6 +43,10 @@ Control Node 컨테이너 내에서 Ansible 플레이북을 실행하여 Worker 
 
 ### 6. 테스트
 
+```shell
+$ docker compose up -d
+```
+
 Worker Node 컨테이너에 nginx가 설치되고 실행되었는 지 확인합니다.
 
 - http://localhost:8081
